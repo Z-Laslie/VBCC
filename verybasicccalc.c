@@ -1,13 +1,7 @@
-// only tested compilation with gcc
-// i need to note that powl is pow's L  O  N  G version of itselfa
-// basic ass calculator
+// only tested compilation with gcc, please send feedback if compiled with Clang or other compilers
 #include <stdio.h>
 #include <math.h>
 #include <float.h>
-
-// now comes the waiting... for cross-platform, it depends
-/*#include <windows.h>
-#include <unistd.h> */ // i might be yelled at gcc, UPDATE: wait... nwm
 
 long double res, n1, n2;
 char op;
@@ -55,7 +49,7 @@ int main (){
            continue;
         }
         printf("%.15Lg\n", res);
+        // i don't think i need to put more comments, a C programmer would understand that clearly, i guess.
     }
     return 0;
 }
-// hope this works: btw %Lf is for LONG DOUBLE,  %lf is for DOUBLE, NOTE THAT!!!!!
